@@ -44,9 +44,8 @@ func initDataBase(gormLogger *gorm2logrus.GormLogger) {
 
 	// https://github.com/go-gorm/postgres
 	DB, err = gorm.Open(postgres.New(postgres.Config{
-		DSN:                  dsn,
-        // disables implicit prepared statement usage
-		PreferSimpleProtocol: true, 
+		DSN:                  "dsn",
+		PreferSimpleProtocol: true,  // disables implicit prepared statement usage
 	}), gormConfig)
 	if err != nil {
 		Logger.Fatalf("pgsql connect failed: %v", err)
