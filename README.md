@@ -3,6 +3,11 @@
 **logrus for gorm v2 base on sirupsen/logrus && onrik/gorm-logrus** 
 
 ## example
+
+``` shell 
+go get github.com/FWangZil/gorm2logrus@main
+```
+
 ```golang
 package main
 
