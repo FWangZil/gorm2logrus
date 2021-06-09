@@ -13,7 +13,7 @@ package main
 
 import github.com/FWangZil/gorm2logrus
 
-// Logger can add hooks and use them normally globally, supporting all the features that Logur itself supports
+// Logger can add hooks and use them normally globally, supporting all the features that logrus itself supports
 var Logger *logrus.Logger
 // Custom Logger for use by GORM v2
 var GormLogger *gorm2logrus.GormLogger
